@@ -12,7 +12,17 @@
 import BasicLayout from "@/layouts/BasicLayout.vue";
 import { useRouter } from "vue-router";
 import { useStore } from "vuex";
+import { onMounted } from "vue";
 
+/**
+ * 全局初始化函数
+ */
+const doint = () => {
+  console.log("hello");
+};
+onMounted(() => {
+  doint();
+});
 const router = useRouter();
 const store = useStore();
 
@@ -25,6 +35,5 @@ router.beforeEach((to, from, next) => {
     }
   }
   next();
-  console.log(to);
 });
 </script>
