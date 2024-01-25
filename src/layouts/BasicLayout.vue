@@ -8,7 +8,9 @@
         <router-view />
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="www.baidu.com" target="_blank"> 友情连接 </a>
+        <a href="https://yupi.icu" target="_blank">
+          编程导航知识星球 by 程序员鱼皮
+        </a>
       </a-layout-footer>
     </a-layout>
   </div>
@@ -24,8 +26,7 @@
 }
 
 #basicLayout .content {
-  /*background: linear-gradient(to right, #fefefe, #fff);*/
-  background: linear-gradient(to right, #bbb, #fff);
+  background: linear-gradient(to right, #fefefe, #fff);
   margin-bottom: 16px;
   padding: 20px;
 }
@@ -40,6 +41,10 @@
   text-align: center;
 }
 </style>
-<script setup lang="ts">
-import GlobalHeader from "@/components/GlobalHeader.vue";
+<script>
+import GlobalHeader from "@/components/GlobalHeader";
+
+export default {
+  components: { GlobalHeader },
+};
 </script>
